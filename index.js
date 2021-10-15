@@ -326,9 +326,9 @@ async function cacaAoTesouro(endpoint, options) {
 */
 
 async function handleSubmit() {
-    let token = await getToken();
-    let config = getConfig(token);
-    let questions = await getQuestions(config);
+    const token = await getToken();
+    const config = getConfig(token);
+    const questions = await getQuestions(config);
 
     const q1 = questions['soma'];
     const q2 = questions['tamanho-string'];
